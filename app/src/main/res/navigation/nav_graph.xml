@@ -23,9 +23,9 @@
     </fragment>
     <fragment
         android:id="@+id/addNotesFragment"
-        android:name="com.carolmusyoka.noteapp.addnote.AddNotesFragment"
+        android:name="com.carolmusyoka.noteapp.add.AddNotesFragment"
         android:label="Add Notes"
-        tools:layout="@layout/fragment_add_notes">
+        tools:layout="@layout/add_notes_fragment">
         <action
             android:id="@+id/action_addNotesFragment_to_notesFragment"
             app:destination="@id/notesFragment"
@@ -38,7 +38,7 @@
         android:id="@+id/notesDetailsFragment"
         android:name="com.carolmusyoka.noteapp.details.NoteDetailsFragment"
         android:label="Update Notes"
-        tools:layout="@layout/fragment_note_details">
+        tools:layout="@layout/fragment_notes_details">
         <action
             android:id="@+id/action_notesDetailsFragment_to_notesFragment"
             app:destination="@id/notesFragment"
@@ -48,7 +48,7 @@
             app:popUpToInclusive="true" />
         <argument
             android:name="notes"
-            app:argType="com.carolmusyoka.noteapp.model.Notes" />
+            app:argType="com.carolmusyoka.noteapp.room.model.Notes" />
     </fragment>
 
 </navigation>

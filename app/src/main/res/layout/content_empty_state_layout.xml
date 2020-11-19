@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_state_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/empty_state_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_250"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_empty" />
+
+    <TextView
+        android:id="@+id/empty_state_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty_state_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:fontFamily="@font/andada"
+        android:gravity="center_horizontal"
+        android:text="@string/text_no_notes"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="@color/title_text_color" />
+
+
+    <TextView
+        android:id="@+id/empty_state_description"
+        android:layout_width="@dimen/dimen_250"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty_state_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:fontFamily="@font/andada"
+        android:gravity="center_horizontal"
+        android:text="@string/text_empty_state_description"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="@color/note_text_color" />
+
+</RelativeLayout>
