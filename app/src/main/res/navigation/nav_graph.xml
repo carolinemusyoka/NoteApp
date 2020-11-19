@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/notesFragment"
         android:name="com.carolmusyoka.noteapp.notes.NotesFragment"
-        android:label="Notzz App"
+        android:label="Note App"
         tools:layout="@layout/notes_fragment">
         <action
             android:id="@+id/action_notesFragment_to_addNotesFragment"
