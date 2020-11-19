@@ -1,9 +1,8 @@
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-    id 'kotlin-android-extensions'
-    id  'kotlin-kapt'
-}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
 
 android {
     compileSdkVersion 29
@@ -17,6 +16,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        viewBinding true
     }
 
     buildTypes {
@@ -70,6 +72,13 @@ dependencies {
 
     //stepper library
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
+    // Navigation Components
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.1"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.1"
+
+    // Preference DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha04"
 
     //room
     implementation "androidx.room:room-runtime:$room_version"
