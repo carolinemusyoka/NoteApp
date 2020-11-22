@@ -63,6 +63,9 @@ dependencies {
     // Kotlin Extensions and Coroutines support for Room
     implementation "androidx.room:room-ktx:2.2.5"
 
+    //stepper library
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.0'

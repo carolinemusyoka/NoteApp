@@ -9,4 +9,13 @@
     <color name="title_text_color">#333333</color>
     <color name="note_text_color">#11111E</color>
     <color name="card_bg">#fff</color>
+    <color name="colorPurple">#6c63ff</color>
+    <color name="colorIndigo">#303F9F</color>
+    <color name="colorBlueMidnight">#003366</color>
+    <color name="colorGrey">#C9C9C9</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="separator">#dedede</color>
+    <color name="gray">#757575</color>
+    <color name="mainBackground">#FFFFFF</color>
+    <color name="mainText">#1C1F27</color>
 </resources>
