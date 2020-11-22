@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.notes
+package com.carolmusyoka.noteapp.note.notes
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater

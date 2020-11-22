@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.details
+package com.carolmusyoka.noteapp.note.details
 
 import android.os.Bundle
 import android.view.*
@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.FragmentNotesDetailsBinding
-import com.carolmusyoka.noteapp.notes.NotesViewModel
+import com.carolmusyoka.noteapp.note.notes.NotesViewModel
 
 class NoteDetailsFragment : Fragment(R.layout.fragment_notes_details) {
 

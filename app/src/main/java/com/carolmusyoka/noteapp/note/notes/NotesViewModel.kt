@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.notes
+package com.carolmusyoka.noteapp.note.notes
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

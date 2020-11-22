@@ -8,7 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.ActivityMainBinding
-import com.carolmusyoka.noteapp.notes.NotesViewModel
+import com.carolmusyoka.noteapp.note.notes.NotesViewModel
 import com.carolmusyoka.noteapp.room.db.NotesDatabase
 import com.carolmusyoka.noteapp.room.repo.NotesRepo
 import com.carolmusyoka.noteapp.utils.factory.viewModelFactory
