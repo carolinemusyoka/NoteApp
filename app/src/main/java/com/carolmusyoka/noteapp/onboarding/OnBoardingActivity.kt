@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.carolmusyoka.noteapp.R
+import com.carolmusyoka.noteapp.main.MainActivity
 import com.carolmusyoka.noteapp.onboarding.datastore.OnBoardingPrefManager
 import kotlinx.android.synthetic.main.onboarding_view.*
 
@@ -24,8 +25,8 @@ class OnBoardingActivity : AppCompatActivity() {
     }
 
     private fun navigateToMain(){
-        OnBoardingPrefManager(this).setFirstTimeLaunch(false)
-        startActivity(Intent(this,MainActivity::class.java))
+        OnBoardingPrefManager(this).firstTimeLaunch
+        startActivity(Intent(this, MainActivity::class.java))
         finish()
 
     }

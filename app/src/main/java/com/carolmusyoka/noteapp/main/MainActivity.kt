@@ -1,5 +1,6 @@
 package com.carolmusyoka.noteapp.main
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.ActivityMainBinding
 import com.carolmusyoka.noteapp.note.notes.NotesViewModel
+import com.carolmusyoka.noteapp.onboarding.OnBoardingActivity
+import com.carolmusyoka.noteapp.onboarding.datastore.OnBoardingPrefManager
 import com.carolmusyoka.noteapp.room.db.NotesDatabase
 import com.carolmusyoka.noteapp.room.repo.NotesRepo
 import com.carolmusyoka.noteapp.utils.factory.viewModelFactory
@@ -24,6 +27,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
+
+
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
 
