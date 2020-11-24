@@ -1,36 +1,31 @@
-@file:Suppress("UNCHECKED_CAST")
+
 
 package com.carolmusyoka.noteapp.onboarding.datastore
 
 import android.content.Context
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.preferencesKey
-import androidx.datastore.preferences.createDataStore
-import kotlinx.coroutines.flow.map
+import android.content.SharedPreferences
 
 class OnBoardingPrefManager(context: Context) {
-    private val dataStore: DataStore<Preferences> = context.createDataStore(
-    name = "onboarding_mode_preference"
-    )
 
-     suspend fun setFirstTimeLaunch(isFirstTime: Boolean) {
-        dataStore.edit {preferences ->
-            preferences[IS_FIRST_TIME_LAUNCH] = isFirstTime
-        }
+    private val prefs: SharedPreferences
+    private val prefsEditor: SharedPreferences.Editor
 
+
+    init {
+        prefs = context.getSharedPreferences(PREF_NAME, PRIVATE_MODE)
+        prefsEditor = prefs.edit()
     }
 
-    val firstTimeLaunch =  dataStore.data
-            .map { preferences ->
-                preferences[IS_FIRST_TIME_LAUNCH] ?: false
+    fun setFirstTimeLaunch(isFirstTime: Boolean) {
+        prefsEditor.putBoolean(IS_FIRST_TIME_LAUNCH, isFirstTime)
+        prefsEditor.commit()
+    }
 
-            }
-
-
+    fun isFirstTimeLaunch(): Boolean = prefs.getBoolean(IS_FIRST_TIME_LAUNCH, true)
 
     companion object {
-        private val IS_FIRST_TIME_LAUNCH = preferencesKey<Boolean>("is_first_time")
+        private const val PRIVATE_MODE = 0    // Shared preference mode
+        private const val PREF_NAME = "app-prefs"
+        private const val IS_FIRST_TIME_LAUNCH = "IsFirstTimeLaunch"
     }
 }
