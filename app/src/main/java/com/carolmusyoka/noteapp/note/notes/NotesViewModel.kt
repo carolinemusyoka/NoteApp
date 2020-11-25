@@ -1,8 +1,8 @@
 package com.carolmusyoka.noteapp.note.notes
 
 import android.app.Application
+import android.widget.TextView
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.carolmusyoka.noteapp.datastore.UIModePreference

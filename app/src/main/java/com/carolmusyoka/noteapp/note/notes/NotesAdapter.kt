@@ -50,6 +50,7 @@ class NotesAdapter : RecyclerView.Adapter<NotesAdapter.NotesVH>() {
             item_notes_title.text = item.title
             item_notes_desc.text = item.description
 
+
             // on item click
             setOnClickListener {
                 onItemClickListener?.let { it(item) }

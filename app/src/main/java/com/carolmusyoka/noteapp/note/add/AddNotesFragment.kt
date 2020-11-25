@@ -12,6 +12,7 @@ import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.AddNotesFragmentBinding
 import com.carolmusyoka.noteapp.note.notes.NotesViewModel
 import com.carolmusyoka.noteapp.utils.toast
+import kotlinx.android.synthetic.main.content_note_layout.*
 
 
 class AddNotesFragment : Fragment(R.layout.add_notes_fragment) {
@@ -63,6 +64,7 @@ class AddNotesFragment : Fragment(R.layout.add_notes_fragment) {
         Pair(
             it.titleET.text.toString(),
             it.noteET.text.toString()
+
         )
     }
 }

@@ -9,11 +9,12 @@ import java.io.Serializable
     tableName = "notes"
 )
 class Notes(
-    @PrimaryKey(autoGenerate = true)
+        @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    var id: Int = 0,
-    @ColumnInfo(name = "title")
-    var title: String,
-    @ColumnInfo(name = "description")
-    var description: String,
+        var id: Int = 0,
+        @ColumnInfo(name = "title")
+        var title: String,
+        @ColumnInfo(name = "description")
+        var description: String,
+
 ) : Serializable

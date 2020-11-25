@@ -11,6 +11,7 @@ import androidx.navigation.fragment.navArgs
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.FragmentNotesDetailsBinding
 import com.carolmusyoka.noteapp.note.notes.NotesViewModel
+import kotlinx.android.synthetic.main.content_note_layout.*
 
 class NoteDetailsFragment : Fragment(R.layout.fragment_notes_details) {
 
@@ -42,7 +43,6 @@ class NoteDetailsFragment : Fragment(R.layout.fragment_notes_details) {
         with(binding) {
             noteLayout.titleET.setText(notes.title)
             noteLayout.noteET.setText(notes.description)
-
             // update notes on click
             updateBtnSaveNotes.setOnClickListener {
                 val (title, note) = getNoteContent()
@@ -98,7 +98,7 @@ class NoteDetailsFragment : Fragment(R.layout.fragment_notes_details) {
     private fun getNoteContent() = binding.noteLayout.let {
         Pair(
             it.titleET.text.toString(),
-            it.noteET.text.toString()
+            it.noteET.text.toString(),
         )
     }
 }
