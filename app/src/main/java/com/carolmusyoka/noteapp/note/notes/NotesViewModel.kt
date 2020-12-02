@@ -1,7 +1,6 @@
 package com.carolmusyoka.noteapp.note.notes
 
 import android.app.Application
-import android.widget.TextView
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
@@ -29,20 +28,25 @@ class NotesViewModel(application: Application, private val notesRepo: NotesRepo)
 
 
     // save notes
-    fun insertNotes(taskName: String, taskDesc: String) = viewModelScope.launch {
+    fun insertNotes(taskName: String, taskDesc: String, taskCharacter:Long,taskDate:String) = viewModelScope.launch {
         val notes = Notes(
-            title = taskName,
-            description = taskDesc
+                title = taskName,
+                description = taskDesc,
+                character = taskCharacter,
+                date = taskDate
         )
         notesRepo.insert(notes)
     }
 
     // save notes
-    fun updateNotes(id: Int, taskName: String, taskDesc: String) = viewModelScope.launch {
+    fun updateNotes(id: Int, taskName: String, taskDesc: String, taskCharacter:Long,taskDate:String ) = viewModelScope.launch {
         val notes = Notes(
-            id = id,
-            title = taskName,
-            description = taskDesc
+                id = id,
+                title = taskName,
+                description = taskDesc,
+                character = taskCharacter,
+                date = taskDate
+
         )
         notesRepo.update(notes)
     }
@@ -52,11 +56,13 @@ class NotesViewModel(application: Application, private val notesRepo: NotesRepo)
 
 
     // delete notes
-    fun deleteNotes(taskID: Int, taskName: String, taskDesc: String) = viewModelScope.launch {
+    fun deleteNotes(taskID: Int, taskName: String, taskDesc: String, taskCharacter: Long, taskDate: String) = viewModelScope.launch {
         val notes = Notes(
-            id = taskID,
-            title = taskName,
-            description = taskDesc
+                id = taskID,
+                title = taskName,
+                description = taskDesc,
+                character = taskCharacter,
+                date = taskDate
         )
         notesRepo.deleteNotes(notes)
     }

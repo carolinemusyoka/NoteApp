@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +15,7 @@ import kotlinx.android.synthetic.main.item_post_notes.view.*
 class NotesAdapter : RecyclerView.Adapter<NotesAdapter.NotesVH>() {
 
     inner class NotesVH(itemView: View) : RecyclerView.ViewHolder(itemView)
+
 
     private val differCallback = object : DiffUtil.ItemCallback<Notes>() {
         override fun areItemsTheSame(oldItem: Notes, newItem: Notes): Boolean {
@@ -43,13 +45,13 @@ class NotesAdapter : RecyclerView.Adapter<NotesAdapter.NotesVH>() {
     }
 
     override fun onBindViewHolder(holder: NotesVH, position: Int) {
-
         val item = differ.currentList[position]
+
         holder.itemView.apply {
 
             item_notes_title.text = item.title
             item_notes_desc.text = item.description
-
+            date.text = item.date
 
             // on item click
             setOnClickListener {

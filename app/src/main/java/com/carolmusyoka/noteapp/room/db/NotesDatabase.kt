@@ -4,6 +4,8 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 import com.carolmusyoka.noteapp.room.model.Notes
 
 @Database(
@@ -33,6 +35,8 @@ abstract class NotesDatabase: RoomDatabase()  {
             context.applicationContext,
             NotesDatabase::class.java,
             "notes_db.db"
-        ).build()
+        ).fallbackToDestructiveMigration()
+                .build()
     }
+
 }

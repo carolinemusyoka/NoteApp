@@ -10,11 +10,15 @@ import java.io.Serializable
 )
 class Notes(
         @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id")
+        @ColumnInfo(name = "id")
         var id: Int = 0,
+        @ColumnInfo(name = "date")
+        var date: String,
         @ColumnInfo(name = "title")
         var title: String,
+        @ColumnInfo(name = "character")
+        var character: Long,
         @ColumnInfo(name = "description")
         var description: String,
 
-) : Serializable
+        ) : Serializable

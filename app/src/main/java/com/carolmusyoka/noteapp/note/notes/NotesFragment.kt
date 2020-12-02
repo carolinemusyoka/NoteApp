@@ -1,5 +1,6 @@
 package com.carolmusyoka.noteapp.note.notes
 
+import android.content.Context
 import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AppCompatDelegate
@@ -20,7 +21,6 @@ import com.carolmusyoka.noteapp.utils.hide
 import com.carolmusyoka.noteapp.utils.show
 
 class NotesFragment : Fragment(R.layout.notes_fragment) {
-
     private val viewModel: NotesViewModel by activityViewModels()
     private lateinit var notesAdapter: NotesAdapter
     private lateinit var _binding: NotesFragmentBinding
@@ -81,16 +81,20 @@ class NotesFragment : Fragment(R.layout.notes_fragment) {
                 val position = viewHolder.adapterPosition
                 val notes = notesAdapter.differ.currentList[position]
                 viewModel.deleteNotes(
-                    notes.id,
-                    notes.title,
-                    notes.description
+                        notes.id,
+                        notes.title,
+                        notes.description,
+                        notes.character,
+                        notes.date
                 )
                 Snackbar.make(view, getString(R.string.note_deleted_msg), Snackbar.LENGTH_LONG)
                     .apply {
                         setAction(getString(R.string.undo)) {
                             viewModel.insertNotes(
-                                notes.title,
-                                notes.description
+                                    notes.title,
+                                    notes.description,
+                                    notes.character,
+                                    notes.date
                             )
                         }
                         show()
