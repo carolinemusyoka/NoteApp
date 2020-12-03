@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
+import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.datastore.UIModePreference
 import com.carolmusyoka.noteapp.room.model.Notes
 import com.carolmusyoka.noteapp.room.repo.NotesRepo
@@ -66,4 +67,5 @@ class NotesViewModel(application: Application, private val notesRepo: NotesRepo)
         )
         notesRepo.deleteNotes(notes)
     }
+
 }

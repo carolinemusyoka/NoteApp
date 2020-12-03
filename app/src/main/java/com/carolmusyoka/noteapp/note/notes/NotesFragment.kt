@@ -19,6 +19,7 @@ import com.carolmusyoka.noteapp.databinding.NotesFragmentBinding
 import com.carolmusyoka.noteapp.room.model.Notes
 import com.carolmusyoka.noteapp.utils.hide
 import com.carolmusyoka.noteapp.utils.show
+import kotlinx.android.synthetic.main.item_post_notes.*
 
 class NotesFragment : Fragment(R.layout.notes_fragment) {
     private val viewModel: NotesViewModel by activityViewModels()
@@ -31,6 +32,7 @@ class NotesFragment : Fragment(R.layout.notes_fragment) {
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
+
         _binding = NotesFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -39,7 +41,6 @@ class NotesFragment : Fragment(R.layout.notes_fragment) {
         super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
         setUpRV()
-
         // onclick navigate to add notes
         binding.btnAddNotes.setOnClickListener {
             findNavController().navigate(R.id.action_notesFragment_to_addNotesFragment)

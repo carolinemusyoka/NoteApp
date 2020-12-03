@@ -1,16 +1,18 @@
 package com.carolmusyoka.noteapp.note.notes
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.room.model.Notes
 import kotlinx.android.synthetic.main.item_post_notes.view.*
+import java.util.*
+
 
 class NotesAdapter : RecyclerView.Adapter<NotesAdapter.NotesVH>() {
 
@@ -32,11 +34,11 @@ class NotesAdapter : RecyclerView.Adapter<NotesAdapter.NotesVH>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NotesVH {
 
         return NotesVH(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.item_post_notes,
-                parent,
-                false
-            )
+                LayoutInflater.from(parent.context).inflate(
+                        R.layout.item_post_notes,
+                        parent,
+                        false
+                )
         )
     }
 
@@ -47,12 +49,15 @@ class NotesAdapter : RecyclerView.Adapter<NotesAdapter.NotesVH>() {
     override fun onBindViewHolder(holder: NotesVH, position: Int) {
         val item = differ.currentList[position]
 
-        holder.itemView.apply {
 
+
+              holder.itemView.apply {
+                  val androidColors = resources.getIntArray(R.array.androidcolors)
+                  val randomAndroidColor = androidColors[Random().nextInt(androidColors.size)]
+                  view_color.setBackgroundColor(randomAndroidColor)
             item_notes_title.text = item.title
             item_notes_desc.text = item.description
             date.text = item.date
-
             // on item click
             setOnClickListener {
                 onItemClickListener?.let { it(item) }

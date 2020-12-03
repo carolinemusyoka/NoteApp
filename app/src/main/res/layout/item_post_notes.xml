@@ -14,9 +14,10 @@
         android:background="?selectableItemBackground">
 
         <View
+            android:id="@+id/view_color"
             android:layout_width="5.6dp"
             android:layout_height="0dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="6dp"
             android:layout_marginEnd="14dp"
             android:background="@color/colorBlueMidnight"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_16"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:ellipsize="end"
             android:fontFamily="@font/andada"
@@ -81,7 +82,7 @@
             android:textColor="@color/note_text_color"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintHorizontal_bias="0.071"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/item_notes_desc"
             app:layout_constraintVertical_bias="0.0"

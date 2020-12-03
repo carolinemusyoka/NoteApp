@@ -18,4 +18,33 @@
     <color name="gray">#757575</color>
     <color name="mainBackground">#FFFFFF</color>
     <color name="mainText">#1C1F27</color>
+    <color name="yellow">#FEAA29</color>
+    <color name="pink">#b52b65</color>
+    <color name="orange">#DF622C</color>
+    <color name="dark">#0a043c</color>
+    <color name="green">#61b15a</color>
+    <color name="red">#a20a0a</color>
+    <item name="blue" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/colorBlueMidnight</item>
+        <item>@color/purple</item>
+        <item>@color/pink</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+        <item>@color/darkred</item>
+    </integer-array>
+
 </resources>
