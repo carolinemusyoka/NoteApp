@@ -14,7 +14,7 @@ import androidx.navigation.fragment.findNavController
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.AddNotesFragmentBinding
 import com.carolmusyoka.noteapp.ui.note.notes.NotesViewModel
-import com.carolmusyoka.noteapp.room.model.Notes
+import com.carolmusyoka.noteapp.data.room.model.Notes
 import com.carolmusyoka.noteapp.utils.toast
 
 import kotlinx.android.synthetic.main.content_note_layout.*

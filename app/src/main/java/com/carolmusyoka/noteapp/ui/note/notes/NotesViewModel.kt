@@ -5,9 +5,9 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.carolmusyoka.noteapp.R
-import com.carolmusyoka.noteapp.datastore.UIModePreference
-import com.carolmusyoka.noteapp.room.model.Notes
-import com.carolmusyoka.noteapp.room.repo.NotesRepo
+import com.carolmusyoka.noteapp.data.datastore.UIModePreference
+import com.carolmusyoka.noteapp.data.room.model.Notes
+import com.carolmusyoka.noteapp.data.room.repo.NotesRepo
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 

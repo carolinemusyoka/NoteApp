@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.carolmusyoka.noteapp.R
-import com.carolmusyoka.noteapp.room.model.Notes
+import com.carolmusyoka.noteapp.data.room.model.Notes
 import kotlinx.android.synthetic.main.item_post_notes.view.*
 import java.util.*
 

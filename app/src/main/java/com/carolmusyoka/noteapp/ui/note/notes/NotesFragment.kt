@@ -16,7 +16,7 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.NotesFragmentBinding
-import com.carolmusyoka.noteapp.room.model.Notes
+import com.carolmusyoka.noteapp.data.room.model.Notes
 import com.carolmusyoka.noteapp.utils.hide
 import com.carolmusyoka.noteapp.utils.show
 import kotlinx.android.synthetic.main.item_post_notes.*

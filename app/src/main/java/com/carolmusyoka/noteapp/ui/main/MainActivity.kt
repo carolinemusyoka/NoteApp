@@ -11,12 +11,12 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.ActivityMainBinding
-import com.carolmusyoka.noteapp.datastore.UIModePreference
+import com.carolmusyoka.noteapp.data.datastore.UIModePreference
 import com.carolmusyoka.noteapp.ui.note.notes.NotesViewModel
 import com.carolmusyoka.noteapp.ui.onboarding.OnBoardingActivity
 import com.carolmusyoka.noteapp.ui.onboarding.datastore.OnBoardingPrefManager
-import com.carolmusyoka.noteapp.room.db.NotesDatabase
-import com.carolmusyoka.noteapp.room.repo.NotesRepo
+import com.carolmusyoka.noteapp.data.room.db.NotesDatabase
+import com.carolmusyoka.noteapp.data.room.repo.NotesRepo
 import com.carolmusyoka.noteapp.utils.factory.viewModelFactory
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

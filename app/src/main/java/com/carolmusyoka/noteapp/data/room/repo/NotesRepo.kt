@@ -1,8 +1,8 @@
-package com.carolmusyoka.noteapp.room.repo
+package com.carolmusyoka.noteapp.data.room.repo
 
 import android.content.Context
-import com.carolmusyoka.noteapp.room.db.NotesDatabase
-import com.carolmusyoka.noteapp.room.model.Notes
+import com.carolmusyoka.noteapp.data.room.db.NotesDatabase
+import com.carolmusyoka.noteapp.data.room.model.Notes
 
 class NotesRepo(private val db: NotesDatabase) {
 

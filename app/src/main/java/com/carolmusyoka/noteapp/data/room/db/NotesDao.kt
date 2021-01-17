@@ -1,7 +1,7 @@
-package com.carolmusyoka.noteapp.room.db
+package com.carolmusyoka.noteapp.data.room.db
 
 import androidx.room.*
-import com.carolmusyoka.noteapp.room.model.Notes
+import com.carolmusyoka.noteapp.data.room.model.Notes
 import kotlinx.coroutines.flow.Flow
 
 @Dao

@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.datastore
+package com.carolmusyoka.noteapp.data.datastore
 
 import android.content.Context
 import androidx.datastore.core.DataStore

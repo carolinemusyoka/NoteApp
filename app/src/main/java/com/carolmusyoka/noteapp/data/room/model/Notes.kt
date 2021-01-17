@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.room.model
+package com.carolmusyoka.noteapp.data.room.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

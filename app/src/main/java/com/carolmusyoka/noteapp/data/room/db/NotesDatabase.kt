@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.room.db
+package com.carolmusyoka.noteapp.data.room.db
 
 import android.content.Context
 import androidx.room.Database
@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.carolmusyoka.noteapp.room.model.Notes
+import com.carolmusyoka.noteapp.data.room.model.Notes
 
 @Database(
     entities = [Notes::class],
@@ -24,9 +24,9 @@ abstract class NotesDatabase: RoomDatabase()  {
         private val LOCK = Any()
 
         // Check for DB instance if not null then get or insert or else create new DB Instance
-        operator fun invoke(context: Context) = instance?: synchronized(LOCK){
+        operator fun invoke(context: Context) = instance ?: synchronized(LOCK){
 
-            instance?: createDatabase(context).also{ instance = it }
+            instance ?: createDatabase(context).also{ instance = it }
 
         }
 
