@@ -1,6 +1,6 @@
 
 
-package com.carolmusyoka.noteapp.onboarding.datastore
+package com.carolmusyoka.noteapp.ui.onboarding.datastore
 
 import android.content.Context
 import android.content.SharedPreferences

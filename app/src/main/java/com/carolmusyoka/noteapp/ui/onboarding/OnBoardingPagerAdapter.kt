@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.onboarding
+package com.carolmusyoka.noteapp.ui.onboarding
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 import com.carolmusyoka.noteapp.R
-import com.carolmusyoka.noteapp.onboarding.entity.OnBoardingPage
+import com.carolmusyoka.noteapp.ui.onboarding.entity.OnBoardingPage
 import kotlinx.android.synthetic.main.onboarding_page_item.view.*
 
 class OnBoardingPagerAdapter(private val onBoardingPageList:Array<OnBoardingPage> = OnBoardingPage.values())

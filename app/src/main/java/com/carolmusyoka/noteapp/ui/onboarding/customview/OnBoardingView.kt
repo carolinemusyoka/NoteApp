@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.onboarding.customview
+package com.carolmusyoka.noteapp.ui.onboarding.customview
 
 import android.content.Context
 import android.util.AttributeSet
@@ -7,10 +7,10 @@ import android.view.View
 import android.widget.FrameLayout
 import androidx.viewpager2.widget.ViewPager2
 import com.carolmusyoka.noteapp.R
-import com.carolmusyoka.noteapp.onboarding.OnBoardingPagerAdapter
-import com.carolmusyoka.noteapp.onboarding.datastore.OnBoardingPrefManager
-import com.carolmusyoka.noteapp.onboarding.entity.OnBoardingPage
-import com.carolmusyoka.noteapp.onboarding.transition.setParallaxTransformation
+import com.carolmusyoka.noteapp.ui.onboarding.OnBoardingPagerAdapter
+import com.carolmusyoka.noteapp.ui.onboarding.datastore.OnBoardingPrefManager
+import com.carolmusyoka.noteapp.ui.onboarding.entity.OnBoardingPage
+import com.carolmusyoka.noteapp.ui.onboarding.transition.setParallaxTransformation
 import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
 import kotlinx.android.synthetic.main.onboarding_view.view.*
 

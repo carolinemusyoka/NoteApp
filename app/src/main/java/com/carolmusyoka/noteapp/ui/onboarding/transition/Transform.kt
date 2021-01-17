@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.onboarding.transition
+package com.carolmusyoka.noteapp.ui.onboarding.transition
 
 import android.view.View
 import kotlinx.android.synthetic.main.onboarding_page_item.view.*

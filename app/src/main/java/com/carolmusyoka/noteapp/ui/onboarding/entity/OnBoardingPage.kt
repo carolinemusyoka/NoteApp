@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.onboarding.entity
+package com.carolmusyoka.noteapp.ui.onboarding.entity
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

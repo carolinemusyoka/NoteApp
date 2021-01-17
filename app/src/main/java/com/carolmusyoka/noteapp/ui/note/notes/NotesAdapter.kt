@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.note.notes
+package com.carolmusyoka.noteapp.ui.note.notes
 
 import android.annotation.SuppressLint
 import android.graphics.Color

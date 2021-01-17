@@ -1,12 +1,12 @@
-package com.carolmusyoka.noteapp.onboarding
+package com.carolmusyoka.noteapp.ui.onboarding
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import com.carolmusyoka.noteapp.R
-import com.carolmusyoka.noteapp.main.MainActivity
-import com.carolmusyoka.noteapp.onboarding.datastore.OnBoardingPrefManager
+import com.carolmusyoka.noteapp.ui.main.MainActivity
+import com.carolmusyoka.noteapp.ui.onboarding.datastore.OnBoardingPrefManager
 import kotlinx.android.synthetic.main.onboarding_view.*
 import kotlinx.coroutines.launch
 
@@ -29,7 +29,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
     private fun navigateToMain(){
         OnBoardingPrefManager(this).setFirstTimeLaunch(false)
-        startActivity(Intent(this,MainActivity::class.java))
+        startActivity(Intent(this, MainActivity::class.java))
         finish()
 
     }

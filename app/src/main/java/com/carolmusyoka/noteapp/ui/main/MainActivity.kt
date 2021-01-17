@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.main
+package com.carolmusyoka.noteapp.ui.main
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,9 +12,9 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.ActivityMainBinding
 import com.carolmusyoka.noteapp.datastore.UIModePreference
-import com.carolmusyoka.noteapp.note.notes.NotesViewModel
-import com.carolmusyoka.noteapp.onboarding.OnBoardingActivity
-import com.carolmusyoka.noteapp.onboarding.datastore.OnBoardingPrefManager
+import com.carolmusyoka.noteapp.ui.note.notes.NotesViewModel
+import com.carolmusyoka.noteapp.ui.onboarding.OnBoardingActivity
+import com.carolmusyoka.noteapp.ui.onboarding.datastore.OnBoardingPrefManager
 import com.carolmusyoka.noteapp.room.db.NotesDatabase
 import com.carolmusyoka.noteapp.room.repo.NotesRepo
 import com.carolmusyoka.noteapp.utils.factory.viewModelFactory
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         if (OnBoardingPrefManager(this).isFirstTimeLaunch()){
-            startActivity(Intent(this,OnBoardingActivity::class.java))
+            startActivity(Intent(this, OnBoardingActivity::class.java))
             finish()
         }
 

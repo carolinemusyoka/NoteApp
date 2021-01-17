@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.carolmusyoka.noteapp.onboarding.customview.OnBoardingView
+<com.carolmusyoka.noteapp.ui.onboarding.customview.OnBoardingView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -7,4 +7,4 @@
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
     android:background="#ffffff"
-    tools:context=".onboarding.OnBoardingActivity"/>
+    tools:context=".ui.onboarding.OnBoardingActivity"/>

@@ -11,11 +11,11 @@
                 />
         </targets>
         <transition
-                class="com.carolmusyoka.noteapp.onboarding.transition.PopTransition"
+                class="com.carolmusyoka.noteapp.ui.onboarding.transition.PopTransition"
                 app:startScale="0.95"
                 app:endScale="1.0"/>
         <transition
-                class="com.carolmusyoka.noteapp.onboarding.transition.FadeTransition"
+                class="com.carolmusyoka.noteapp.ui.onboarding.transition.FadeTransition"
                 app:startAlpha="0.3"
                 app:endAlpha="1.0"/>
     </transitionSet>

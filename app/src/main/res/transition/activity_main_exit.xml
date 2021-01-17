@@ -10,11 +10,11 @@
             <target android:targetId="@id/container" />
         </targets>
         <transition
-                class="com.carolmusyoka.noteapp.onboarding.transition.PopTransition"
+                class="com.carolmusyoka.noteapp.ui.onboarding.transition.PopTransition"
                 app:startScale="1.0"
                 app:endScale="0.95"/>
         <transition
-                class="com.carolmusyoka.noteapp.onboarding.transition.FadeTransition"
+                class="com.carolmusyoka.noteapp.ui.onboarding.transition.FadeTransition"
                 app:startAlpha="1.0"
                 app:endAlpha="0.3"/>
     </transitionSet>

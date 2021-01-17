@@ -1,4 +1,4 @@
-package com.carolmusyoka.noteapp.note.details
+package com.carolmusyoka.noteapp.ui.note.details
 
 import android.content.Context
 import android.os.Bundle
@@ -13,7 +13,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.carolmusyoka.noteapp.R
 import com.carolmusyoka.noteapp.databinding.FragmentNotesDetailsBinding
-import com.carolmusyoka.noteapp.note.notes.NotesViewModel
+import com.carolmusyoka.noteapp.ui.note.notes.NotesViewModel
 import com.carolmusyoka.noteapp.room.model.Notes
 import kotlinx.android.synthetic.main.content_note_layout.*
 import kotlinx.android.synthetic.main.item_post_notes.*
