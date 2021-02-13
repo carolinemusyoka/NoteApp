@@ -24,7 +24,7 @@ Note App is a simple note taking application  📝. Written in Kotlin and implem
 ## Libraries used
 
 - Room
-- Viewmodel - tores UI-related data that isn't destroyed on UI changes.
+- Viewmodel - Stores UI-related data that isn't destroyed on UI changes.
 - Livedata -Data objects that notify views when the underlying database changes.
 - Coroutines
 - Material library

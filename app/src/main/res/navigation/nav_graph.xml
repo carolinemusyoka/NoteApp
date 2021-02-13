@@ -48,7 +48,7 @@
             app:popUpToInclusive="true" />
         <argument
             android:name="notes"
-            app:argType="com.carolmusyoka.noteapp.room.model.Notes" />
+            app:argType="com.carolmusyoka.noteapp.data.room.model.Notes" />
     </fragment>
 
 </navigation>
