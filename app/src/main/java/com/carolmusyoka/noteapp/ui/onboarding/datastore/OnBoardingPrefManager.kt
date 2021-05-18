@@ -7,14 +7,9 @@ import android.content.SharedPreferences
 
 class OnBoardingPrefManager(context: Context) {
 
-    private val prefs: SharedPreferences
-    private val prefsEditor: SharedPreferences.Editor
+    private val prefs: SharedPreferences = context.getSharedPreferences(PREF_NAME, PRIVATE_MODE)
+    private val prefsEditor: SharedPreferences.Editor = prefs.edit()
 
-
-    init {
-        prefs = context.getSharedPreferences(PREF_NAME, PRIVATE_MODE)
-        prefsEditor = prefs.edit()
-    }
 
     fun setFirstTimeLaunch(isFirstTime: Boolean) {
         prefsEditor.putBoolean(IS_FIRST_TIME_LAUNCH, isFirstTime)
