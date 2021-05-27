@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
          * Just so the viewModel doesn't get removed by the compiler, as it isn't used
          * anywhere here for now
          */
-
+       viewModel
 
         navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment?
